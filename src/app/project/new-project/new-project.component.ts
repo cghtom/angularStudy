@@ -1,0 +1,23 @@
+import {Component, Inject, OnInit} from '@angular/core';
+import {MD_DIALOG_DATA, MdDialogRef} from "@angular/material";
+
+@Component({
+  selector: 'app-new-project',
+  templateUrl: './new-project.component.html',
+  styleUrls: ['./new-project.component.scss']
+})
+export class NewProjectComponent implements OnInit {
+  title=''
+  constructor(@Inject(MD_DIALOG_DATA) private data
+  ,private dialogref:MdDialogRef<NewProjectComponent>) {
+
+  }
+
+  ngOnInit() {
+    this.title = this.data.title
+  }
+
+  onSave() {
+    this.dialogref.close('i 接收到了消息')
+  }
+}

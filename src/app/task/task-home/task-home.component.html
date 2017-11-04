@@ -1,0 +1,24 @@
+<div class="taskLists">
+  <app-task-list class="list-container" *ngFor="let list of lists">
+    <app-task-header
+      [header]="list.name"
+      (newTask)="newTaskDialog()"
+       (move)="newMoveAllDialog()"
+      (onDelete)="onDeleteDialog()"
+      (onChangeName)="onChangeListName()"
+    >
+
+    </app-task-header>
+    <app-task-item
+      *ngFor="let task of list.tasks"
+      [item]="task"
+    (itemClick)="onTaskItemClick(task)"
+    >
+
+    </app-task-item>
+  </app-task-list>
+</div>
+<button class="fab_button"
+        md-fab type="button" (click)="openNewTaskDialog()">
+  <md-icon>add</md-icon>
+</button>

@@ -1,0 +1,14 @@
+<form>
+  <h2 md-dialog-title>移动本列表所有内容：</h2>
+  <div md-dialog-content>
+    <md-select placeholder="请选择目标列表">
+      <md-option *ngFor="let item of lists">
+        {{item.name}}
+      </md-option>
+    </md-select>
+  </div>
+  <div mdDialogActions>
+    <button type="button" md-raised-button color="primary" (click)="onSave()">保存</button>
+    <button type="button" md-button mdDialogClose>取消</button>
+  </div>
+</form>

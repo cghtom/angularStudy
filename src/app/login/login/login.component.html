@@ -1,0 +1,40 @@
+<form>
+  <md-card>
+    <md-card-header>
+      <md-card-title>登录:</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <md-input-container align="start" class="full-width">
+        <!--前缀-->
+        <!--<span mdPrefix>邮箱</span>-->
+        <input mdInput type="text" placeholder="你的email">
+        <!--后缀-->
+        <!--<span mdSuffix>@qq.com</span>-->
+      </md-input-container>
+      <md-input-container class="full-width">
+        <input mdInput type="password" placeholder="你的密码">
+      </md-input-container>
+
+      <button md-raised-button color="accent" type="button">登录</button>
+
+    </md-card-content>
+    <md-card-actions class="text-right">
+      <p>还没有账户?<a href="" routerLink="/register">注册</a></p>
+      <p>忘记密码?<a href="">找回</a></p>
+    </md-card-actions>
+  </md-card>
+  <md-card>
+    <md-card-header>
+      <md-card-title>
+        每日佳句
+      </md-card-title>
+      <md-card-subtitle>
+           少壮不努力，老大徒伤悲
+      </md-card-subtitle>
+    </md-card-header>
+    <img mdCardImage src="../../../assets/img/quote_fallback.jpg">
+    <md-card-content>
+      An idle youth, a needy age.
+    </md-card-content>
+  </md-card>
+</form>
