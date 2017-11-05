@@ -11,6 +11,9 @@ import {
   MdToolbarModule, MdTooltipModule
 } from "@angular/material";
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import {BrowserModule} from "@angular/platform-browser";
+import {AppRoutingModule} from "../app-routing.module";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 const modules=[CommonModule,
   MdSidenavModule,
   MdToolbarModule,
@@ -29,7 +32,10 @@ const modules=[CommonModule,
   MdRadioModule,
   MdDatepickerModule,
   MdNativeDateModule,
-   MdSelectModule]
+   MdSelectModule,
+  AppRoutingModule,
+  BrowserAnimationsModule,
+]
 @NgModule({
   imports: modules,
   exports: modules,

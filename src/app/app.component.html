@@ -1,7 +1,7 @@
 <md-sidenav-container [class.myapp-dark-theme]="darkTheme">
   <!--侧边栏-->
   <md-sidenav #sidenav mode="over" align="start">
-    <app-sidebar>
+    <app-sidebar (navClick)="sidenav.close()">
 
     </app-sidebar>
   </md-sidenav>

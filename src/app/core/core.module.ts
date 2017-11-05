@@ -12,10 +12,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   imports: [
-
     HttpModule,
-    BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [HeaderComponent, FooterComponent, SidebarComponent],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent]
